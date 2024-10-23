@@ -1,0 +1,73 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  position: relative;
+  width: 100vw; /* 100% ширини вікна браузера */
+  height: 100vh; /* 100% висоти вікна браузера */
+
+  padding: 0;
+  margin: 0;
+
+  background: linear-gradient(180deg, #071739 30%, #4A6382 100%);
+  /* filter: blur(10px); */
+  mix-blend-mode: normal;
+}
+
+#wish {
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  width: 940px;
+  height: 338px;
+  left: -80px;
+  top: 188px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 419px;
+  line-height: 350px;
+  letter-spacing: -0.07em;
+
+  /* Маска для прозорого зникання */
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.09; /* Загальна непрозорість, щоб бачити текст чіткіше */
+}
+
+#motto{
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  width: 750px;
+  height: 73px;
+  left: 104px;
+  top: 542px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 59px;
+  /* letter-spacing: -0.07em; */
+
+  color: #F0D7B8;
+}
+
+#main-title{
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  width: 605px;
+  height: 104px;
+  left: 110px;
+  top: 605px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 124px;
+  line-height: 104px;
+  /* identical to box height, or 84% */
+  letter-spacing: -0.07em;
+  color: #FFFFFF;
+}
