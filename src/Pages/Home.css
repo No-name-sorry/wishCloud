@@ -1,5 +1,4 @@
-body {
-  font-family: "Noto Sans", sans-serif;
+.content {
   position: relative;
   width: 100vw; /* 100% ширини вікна браузера */
   height: 100vh; /* 100% висоти вікна браузера */
