@@ -1,0 +1,92 @@
+.list{
+    background: rgba(7, 23, 57, 0.1);
+    border: 1px solid #071739;
+    border-radius: 8px;
+    width: 961px;
+    padding: 36px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4A6382;
+    margin-bottom: 18px;
+    &.add{
+        background-color: #FFFFFF;
+    }
+    &.add:active{
+        background: rgba(7, 23, 57, 0.1);
+    }  
+}
+
+.cancelButton{
+    width: 24px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.listTitle{
+    font-weight: 900;
+    font-size: 30px;
+    margin-right: 80px;
+    a{
+        text-decoration: none;
+    }
+}
+
+.category{
+    background: #FFFFFF;
+    border: 1px solid #4A6382;
+    border-radius: 20px;
+    padding: 10px 56px;
+}
+
+.progress{
+    display: flex;
+    gap: 13px;
+    background: rgba(74, 99, 130, 0.1);
+    border-radius: 20px;
+    padding: 10px 12px;
+}
+
+.progress img{
+    width: 20px;
+    user-select: none;
+}
+
+.selectPrivacy {
+    appearance: none;
+    color: #4A6382;
+    background: #FFFFFF;
+    border: 1px solid #071739;
+    border-radius: 20px;
+    padding: 10px 60px;
+    cursor: pointer;
+    option {
+        text-align: center;
+    }
+}
+  
+  /* ADD LIST BUTTON */
+  .plusIcon {
+    padding: 20px 447px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vertical,
+  .horizontal {
+    position: absolute;
+    background-color: #071739; 
+  }
+  
+  .vertical {
+    width: 66px; 
+    height: 2px; 
+  }
+  
+  .horizontal {
+    width: 2px;
+    height: 66px; 
+  }
+  
