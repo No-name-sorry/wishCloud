@@ -1,0 +1,115 @@
+body{
+    background-color: white;
+    width: 100vw;
+}
+
+.contentMyList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentMyList h1{
+    color: #071739;
+    font-size: 70px;
+    margin: 54px 0;
+}
+
+.contentMyList h3{
+    color: #071739;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.mainContentMyList{
+    display: flex;
+    gap: 130px;
+    .button{
+        margin-top: 20px;
+        border: 0.5px solid #071739;
+        border-radius: 8px;
+        font-size: 14px;
+        padding: 8px 12px;
+        color: #F0D7B8;
+        background-color:#071739;
+        cursor: pointer;
+    }
+}
+
+.filters label{
+    color: #4A6382;
+    font-size: 13px;
+}
+
+.filters input[type="checkbox"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #071739; 
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+.filters input[type="checkbox"]:checked::after {
+    background-color: #071739;
+    content: "✔"; 
+    color:#F0D7B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+
+}
+
+.filtersTitle{
+    color: #071739;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.filtersTitle p{
+    color: #909090;
+    text-decoration: underline; 
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.categoriesFilters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+.categoriesList {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    position: relative;
+    align-items: center;
+}
+  
+.toggleButton {
+    margin-top: 0;
+    cursor: pointer;
+    color: #909090;
+    font-size: 14px;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+  
+.toggleButton:hover {
+    color: #071739;
+}  
+
+.filterLine{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    grid-column: 1/span 2;
+}
