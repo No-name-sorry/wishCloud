@@ -1,0 +1,134 @@
+body{
+    background: #fff;
+}
+
+input{
+    color: #071739;
+}
+
+.creationContent{
+    margin: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #071739;
+}
+
+.creationHeader{
+    padding: 26px 0 26px 50px;
+    border: 1px solid #071739;
+    border-radius: 10px 10px 0 0;
+    background-color: #071739;
+    h3{
+        color: #F0D7B8;
+        font-size: 20px;
+    }
+}
+
+.creationBody{
+    border: 1px solid #071739;
+    display: flex;
+    /* align-items: center; */
+    gap: 55px;
+    padding: 44px 64px;
+}
+
+.authorInfo{
+    color: #909090;
+    h4{
+        color: #071739;
+    }
+}
+
+.creator, .date{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0px 220px 44px 0;
+    margin-bottom: 44px;
+    border-bottom: 1px solid #909090;
+
+}
+
+.createInput{
+    display: flex;
+    align-items: center;
+    border-radius: 42px;
+    background: rgba(7, 23, 57, 0.1);
+    border: 1px solid rgba(7, 23, 57, 0.1);
+}
+
+.inputSection{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    gap: 12px;
+    align-items: center;
+    input{
+        background: transparent;
+        border: 0;
+        outline: 0;
+        font-size: 14px;
+        max-width: 344px;  
+        padding: 10px 0 10px 16px;
+      };
+}
+
+.selectDiv{
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    grid-column: 1/ span 2;
+    .createType{
+        appearance: none;
+        color: #4A6382;
+        background: #FFFFFF;
+        border: 1px solid #071739;
+        border-radius: 20px;
+        padding: 10px 60px;
+        cursor: pointer;
+        option {
+            text-align: center;
+        }
+    }
+}
+
+.descriptionInput{
+    border-radius: 20px;
+    padding: 10px 0 84px 0;
+    grid-column: 1 / span 3; 
+}
+.nameInput{
+    grid-column: 1/ span 2;
+}
+
+.createButton .button{
+    border: 1px solid #071739;
+    background-color: #071739;
+}
+
+.createButton .button:hover{
+    color: #071739;
+    border: 1px solid #071739;
+    background-color: #FFFFFF;
+}
+
+.cancelButton .button{
+    border: 1px solid #852020;
+    background-color: #852020;
+}
+
+.cancelButton .button:hover{
+    color: #852020;
+    border: 1px solid #852020;
+    background-color: #FFFFFF;
+}
+
+.button{
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 16px 60px;
+    color: #F0D7B8;
+    cursor: pointer;
+}
+
