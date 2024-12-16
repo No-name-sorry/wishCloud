@@ -1,0 +1,90 @@
+.navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #071739;
+    padding: 10px 100px;
+    overflow: hidden; /* Захист від "виступання" вмісту */
+}
+
+.logoImg{
+    width: 70px;
+    padding: 0;
+}
+
+.menuButtons{
+    display: flex;
+    padding: 0;
+    gap: 28px;
+}
+
+.buttonsWrapper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+}
+  
+.menuButtons {
+    gap: 32px;
+    button{
+        box-shadow: 0px 5px 21px rgba(0, 0, 0, 0.4);
+        border-radius: 18px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        padding: 4px 10px;
+        
+    }
+}
+  
+.logIn{
+    background-color: #071739;
+    color: #A68868;
+    border: 2px solid #A68868;
+}
+
+.logIn:active{
+    background: #A68868;
+    color: #071739;
+}
+  
+.signIn{
+    color:#071739;
+    border: 2px solid #A68868;
+    background: #A68868;
+} 
+
+.signIn:active{
+    color: #A68868;
+    border: 2px solid #A68868;
+    background: #071739;
+} 
+
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    gap: 32px;
+}
+
+.ul a{
+    text-decoration: none; 
+    font-size: 18px;
+    cursor: pointer;
+    color: #A68868;
+}
+
+.ul .active{
+    text-decoration: underline; 
+    text-underline-offset: 8px; 
+}
+
+.languageImg{
+    width: 30px;
+    cursor: pointer;
+}
