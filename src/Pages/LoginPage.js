@@ -1,58 +1,40 @@
-import React from "react";
-import * as Components from './LoginElements';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import classes from './LoginPage.module.css';
+import background from '../assets/background.png';
+import hidepassword from '../assets/hidepassword.png';
 
-function LoginPage() {
-    const [signIn, toggle] = React.useState(true);
-     return(
-         <Components.Container>
-             <Components.SignUpContainer signinIn={signIn}>
-                 <Components.Form>
-                     <Components.Title>Create Account</Components.Title>
-                     <Components.Input type='text' placeholder='Name' />
-                     <Components.Input type='email' placeholder='Email' />
-                     <Components.Input type='password' placeholder='Password' />
-                     <Components.Button>Sign Up</Components.Button>
-                 </Components.Form>
-             </Components.SignUpContainer>
+const LoginPage = () => {
+  return (
+    <div className={classes.contentLogin}>
+      <div className={classes.loginSection}>
 
-             <Components.SignInContainer signinIn={signIn}>
-                  <Components.Form>
-                      <Components.Title>Sign in</Components.Title>
-                      <Components.Input type='email' placeholder='Email' />
-                      <Components.Input type='password' placeholder='Password' />
-                      <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
-                      <Components.Button>Sign In</Components.Button>
-                  </Components.Form>
-             </Components.SignInContainer>
+        <div className={classes.loginText}>
+          <h1>LogIn</h1>
+          <p>
+            Do not have an account, <Link to='/signup'><span>Create a new one</span></Link>.
+          </p>
+        </div>
 
-             <Components.OverlayContainer signinIn={signIn}>
-                 <Components.Overlay signinIn={signIn}>
+        <p>Enter Your Email</p>
+        <div className={classes.inputStyle}>
+          <input type="text" placeholder="example@gmail.com" />
+        </div>
 
-                 <Components.LeftOverlayPanel signinIn={signIn}>
-                     <Components.Title>Welcome Back!</Components.Title>
-                     <Components.Paragraph>
-                         To keep connected with us please login with your personal info
-                     </Components.Paragraph>
-                     <Components.GhostButton onClick={() => toggle(true)}>
-                         Sign In
-                     </Components.GhostButton>
-                     </Components.LeftOverlayPanel>
+        <p>Enter Your Password</p>
+        <div className={classes.inputStyle}>
+          <input type="text" placeholder="******" />
+          <img src={hidepassword} alt='hidden' />
+        </div>
 
-                     <Components.RightOverlayPanel signinIn={signIn}>
-                       <Components.Title>Hello, Friend!</Components.Title>
-                       <Components.Paragraph>
-                           Enter Your personal details and start wishing with us 
-                       </Components.Paragraph>
-                           <Components.GhostButton onClick={() => toggle(false)}>
-                               Sign Up
-                           </Components.GhostButton> 
-                     </Components.RightOverlayPanel>
- 
-                 </Components.Overlay>
-             </Components.OverlayContainer>
-
-         </Components.Container>
-     )
-}
+        <div className={classes.buttons}>
+          <button>Login</button>
+          <p className={classes.forgotPassword}>Forgot Your Password</p>
+        </div>
+      </div>
+      <img src={background} alt='img-login' className={classes.backgroundImage} />
+    </div>
+  );
+};
 
 export default LoginPage;
